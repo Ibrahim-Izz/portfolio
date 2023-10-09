@@ -2916,9 +2916,7 @@ input, select, textarea {
 			position: relative;
 		}
 
-		header > p {
-			font-style: italic;
-		}
+
 
 		header > h1 + p {
 			font-size: 1.1rem;
@@ -3901,15 +3899,26 @@ input, select, textarea {
 						top: 0px;
 						z-index: 96;
 					}
+					.parent ~ p{
+						padding: 0 1rem;
+					}
 					.parent ~ img{
 						border-radius: 0.5rem;
+					}
+					.parent button{
+						padding: 1rem;
+						line-height: initial;
+						box-shadow: none;
+					}
+					.parent button:hover{
+						box-shadow: none;
 					}
 					.left-align{
 						text-align: left;
 					}
 					.top{
 						background-color: white;
-						border-radius: 0.5rem 0 0 0;
+						border-radius: 0.5rem;
 					}
 					.left-align{
 						margin: 1.5rem 0;
@@ -3927,7 +3936,13 @@ input, select, textarea {
 						width: 100%;
 						border-radius: 0.5rem;
 					}
-
+					.video-parent{
+						margin: 2rem 0;
+					}
+					.video-parent h3{
+						margin: 2rem 0;
+						text-align: center;
+					}
 
 			@media screen and (max-width: 980px) {
 
