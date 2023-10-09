@@ -3901,6 +3901,9 @@ input, select, textarea {
 						top: 0px;
 						z-index: 96;
 					}
+					.parent ~ p{
+						padding: 0 1rem;
+					}
 					.parent ~ img{
 						border-radius: 0.5rem;
 					}
