@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ibrahim Izz El-deen | Graduation project</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">Ibrahim Izz El-deen</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="index.html">Data Projects</a></li>
+          <li class="active"><a href="graduation-project.html">Graduation Project</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.facebook.com/ibrahem.izzaldeen"
+              class="icon brands fa-facebook-f"
+              target="_blank"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ibrahim-izz/"
+              class="icon brands fa-linkedin"
+              target="_blank"
+              ><span class="label">linkedIn</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Post -->
+        <section class="post">
+          <header class="major">
+            <h1>Graduation Project</h1>
+            <h3>
+              Design and Implementation of an Autonomous RC Car Based on
+              Computer Vision and Deep Learning
+            </h3>
+          </header>
+          <div class="image main">
+            <img
+              src="images/car.jpg"
+              alt="Autonomous car"
+              style="border-radius: 0.5rem;"
+            />
+          </div>
+          <p>
+            For Simulation, we Used OpenCV for Image Preprocessing & NVIDIA CNN
+            Model with Keras Library for model training, following the
+            impeccable tutoring of The Complete Self-Driving Car Course on
+            Udemy.
+          </p>
+          <p>
+            In addition, we deployed a successful hardware model of the Donkey
+            Car Open-Source Project.
+          </p>
+          <p>
+            Donkey Car Is A Self-Driving Car Platform, Simulator and Python
+            Library for High-Level Self-Driving Hobby RC Cars.
+          </p>
+          <p>
+            The initial system components were to choose a 1/10 scale RC
+            Electric Car (Kyosho DMT VE-R) with a 3S LiPo Battery and a 2400KV
+            Brushless Motor. Along the capturing power of Raspberry Pi Camera
+            V2, and Computation Power of the NVIDIA Jetson Nano 4 GB B01
+            Developer Kit.
+          </p>
+          <p>
+            We managed to earn a Competition Achievement Award from IC-SIT 2023
+            Competition Organized by IEEE Egypt AP-S / MTT-S Joint Chapter and
+            SCGRS Technological Company Golden Sponsorship.
+          </p>
+          <h3 style="text-align: left">For more details:</h3>
+          <p>
+            Presentaion: <a href="https://www.canva.com/design/DAFmeiTlmYY/3Lv6ddsDaaPWreEJfCOihQ/view" target="_blank"
+              >https://www.canva.com/design/DAFmeiTlmYY/3Lv6ddsDaaPWreEJfCOihQ/view</a
+            >
+          </p>
+          <p>
+            Book: <a href="https://drive.google.com/file/d/1BXj05_FkiBHc34gUKMd8AQw6lCSe7RjG/view" target="_blank"
+              >https://drive.google.com/file/d/1BXj05_FkiBHc34gUKMd8AQw6lCSe7RjG/view</a
+            >
+          </p>
+          <p style="text-align: left;">
+            Self-Driving Test: <a href="https://drive.google.com/file/d/1w90Sd6HpwtLKdpfs0HURAVnMw3okhCR4/view" target="_blank"
+              >https://drive.google.com/file/d/1w90Sd6HpwtLKdpfs0HURAVnMw3okhCR4/view</a
+            >
+          </p>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section class="alt">
+            <h3>Address</h3>
+            <p>
+              Damietta, Egypt
+            </p>
+          </section>
+          <section>
+            <h3>Phone</h3>
+            <p><a href="https://wa.me/qr/FAUCOJLUJXX4K1" target="_blank">(+20) 110-1232269</a></p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p><a href="mailto:ibrahem.izzaldeen@gmail.com">ibrahem.izzaldeen@gmail.com</a></p>
+          </section>
+          <script>
+            $(document).ready(function () {
+              // Add class to mailto link
+              // Needed to separate the disabling of the default action AND copy email to clipboard
+              $('a[href^=mailto]').addClass('mailto-link');
+
+              var mailto = $('.mailto-link');
+
+              // Disable opening your email client. yuk.
+              $('a[href^=mailto]').click(function () {
+                return false;
+              })
+
+              // On click, get href and remove 'mailto:' from value
+              // Store email address in a variable.
+              mailto.click(function () {
+                var href = $(this).attr('href');
+                var email = href.replace('mailto:', '');
+                copyToClipboard(email);
+                $('.mailto-message').empty().append(messageSuccess);
+                setTimeout(function () {
+                  $('.mailto-message').empty().append(messageCopy);
+                }, 2000);
+              });
+
+            });
+
+            // Grabbed this from Stack Overflow.
+            // Copies the email variable to clipboard
+            function copyToClipboard(text) {
+              var dummy = document.createElement("input");
+              document.body.appendChild(dummy);
+              dummy.setAttribute('value', text);
+              dummy.select();
+              document.execCommand('copy');
+              document.body.removeChild(dummy);
+            }</script>
+          <section>
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a href="https://www.facebook.com/ibrahem.izzaldeen" class="icon brands alt fa-facebook-f"
+                  target="_blank"><span class="label">Facebook</span></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/ibrahim-izz/" class="icon brands alt fa-linkedin" target="_blank"><span
+                    class="label">LinkedIn</span></a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+      <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+      </body>
+      
+      </html>
