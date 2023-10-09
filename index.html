@@ -160,11 +160,13 @@
               <div class="parent"><button class="btn modal-close1 top">x</button></div>
               <img src="./images/Toys.png" alt="toy company sales Analysis">
               <h2>Toy Company Sales Analysis</h2>
+              <p>
               <ol>
                 <li>2023 Sales Performance Report</li>
                 <li>Product Performance Report</li>
                 <li>Store Performance Report</li>
               </ol>
+              </p>
               <h3 style="text-align: left;">Learned to Use Some Common DAX Functions to Measure:</h3>
               <p>
               <ol>
@@ -186,40 +188,6 @@
               $('.modal-close1').on('click', function () {
               $('body').removeClass('modal-open1');
               $('.modal1').fadeOut();
-              });
-              });
-          </script>
-          </article>
-          <article>
-            <header>
-              <h2>
-                  Time Series<br />
-                  Forecasting
-              </h2>
-            </header>
-            <img src="images/T-series.png" alt="" class="modal-open2" style="cursor: pointer;"/>
-            <p>
-              Practising Power BI Time Sereis Forecasting, Using DAX to write Linear Regression Formulas from scratch, and then simply using LINESTX( ) Function to do it all for me without manual calulations.
-            </p>
-            <button class = "btn modal-open2"> View Project </button> <br><br>
-            <div class = "modal2">
-              <div class="parent"><button class="btn modal-close2 top">x</button></div>
-              <img src="./images/T-series.png" alt="time series forecasting">
-              <h2>Time Series forecasting</h2>
-              <p>Practising Power BI Time Sereis Forecasting, Using DAX to write Linear Regression Formulas from scratch, and then simply using LINESTX( ) Function to do it all for me without manual calulations.</p>
-              <p>I learnt some new concepts like Decomposition, which is the trend profiliing of time sereis data, Deseasonalization, which is to normalize seasonal compnents and match the overall data trend, and how using LINESTX( ) outperforms automatic forecasting feature in Power BI.</p>
-              <video src="./images/T-series.mp4" type="video/mp4" controls width="1080"></video>
-            
-            </div>
-            <script>
-              $(document).ready(function () {
-              $('.modal-open2').on('click', function () {
-              $('body').addClass('modal-open2');
-              $('.modal2').fadeIn();
-              });
-              $('.modal-close2').on('click', function () {
-              $('body').removeClass('modal-open2');
-              $('.modal2').fadeOut();
               });
               });
           </script>
@@ -268,6 +236,40 @@
                 });
               });
             </script>
+          </article>
+          <article>
+            <header>
+              <h2>
+                  Time Series<br />
+                  Forecasting
+              </h2>
+            </header>
+            <img src="images/T-series.png" alt="" class="modal-open2" style="cursor: pointer;"/>
+            <p>
+              Practising Power BI Time Sereis Forecasting, Using DAX to write Linear Regression Formulas from scratch, and then simply using LINESTX( ) Function to do it all for me without manual calulations.
+            </p>
+            <button class = "btn modal-open2"> View Project </button> <br><br>
+            <div class = "modal2">
+              <div class="parent"><button class="btn modal-close2 top">x</button></div>
+              <img src="./images/T-series.png" alt="Time-series forecasting">
+              <h2>Time-series forecasting</h2>
+              <p>Practising Power BI Time Sereis Forecasting, Using DAX to write Linear Regression Formulas from scratch, and then simply using LINESTX( ) Function to do it all for me without manual calulations.</p>
+              <p>I learnt some new concepts like Decomposition, which is the trend profiliing of time sereis data, Deseasonalization, which is to normalize seasonal compnents and match the overall data trend, and how using LINESTX( ) outperforms automatic forecasting feature in Power BI.</p>
+              <video src="./images/T-series.mp4" type="video/mp4" controls width="1080"></video>
+            
+            </div>
+            <script>
+              $(document).ready(function () {
+              $('.modal-open2').on('click', function () {
+              $('body').addClass('modal-open2');
+              $('.modal2').fadeIn();
+              });
+              $('.modal-close2').on('click', function () {
+              $('body').removeClass('modal-open2');
+              $('.modal2').fadeOut();
+              });
+              });
+          </script>
           </article>
 
         </section>
