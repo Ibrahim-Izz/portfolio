@@ -1,2 +1,2 @@
 # Portfolio
-My Portfolio: https://ibrahim-izz.github.io/portfolio/index.html
+My Portfolio: https://ibrahim-izz.github.io/portofolio/index.html
