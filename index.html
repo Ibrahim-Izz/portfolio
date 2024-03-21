@@ -53,94 +53,151 @@
         </ul>
         <ul class="icons">
           <li>
-            <a
-              href="https://www.facebook.com/ibrahem.izzaldeen"
-              class="icon brands fa-facebook-f"
-              target="_blank"
-              ><span class="label">Facebook</span></a
-            >
+            <a href="https://www.facebook.com/ibrahem.izzaldeen" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/ibrahim-izz/"
-              class="icon brands fa-linkedin"
-              target="_blank"
-              ><span class="label">linkedIn</span></a
-            >
+            <a href="https://www.linkedin.com/in/ibrahim-izz/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a>
+          </li>
+          <!-- GitHub Icon -->
+          <li>
+            <a href="https://github.com/Ibrahim-Izz" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a>
           </li>
         </ul>
       </nav>
 
       <!-- Main -->
       <div id="main">
-        <!-- Featured Post -->
         <article class="post featured">
-          <header class="major">
-            <h2>
-              ADIDAS Sales Analysis
-            </h2>
-            <img src="images/adidas.jpg" alt="Adidas Sales Analysis" class="modal-open0" style="cursor: pointer;"/>
-            <p>
-              Analyzing ADIDAS Sales Across USA Stores from January 2020 to December 2021
-            </p>
+          <header>
+            <h2>Dining Satisfaction Analysis</h2>
+            <a href="javascript:void(0);" class="modal-open4">
+              <img src="images/dining1.jpg" alt="Dining Satisfaction Analysis" style="max-width:100%; height:auto; cursor:pointer;">
+            </a>
           </header>
-          <button class = "btn modal-open0"> View Project </button> <br><br>
-            <div class = "modal0">
-              <div class="parent"><button class="btn modal-close0 top"><img src="./images/close.png" alt=""></button></div>
-              <img src="./images/adidas.jpg" alt="adidas sales Analysis">
-              <h2>Adidas Sales Analysis</h2>
-              <h4>
-                Analyzing ADIDAS Sales Across USA Stores from January 2020 to December 2021
-              </h4>
-              <p>
-              <ul class="tick">
-                <li>ETL Done with Power Query</li>
-                <li>Analysis Done With Pivot Tables</li>
-                <li>Dashboard Design Done with Excel Tools</li>
+          <p>A descriptive and predictive analysis of dining satisfaction using Looker Studio and BigQuery ML. It evaluates various factors influencing dining satisfaction and predicts customer satisfaction based on their information and survey ratings.</p>
+          <button class="btn modal-open4">View Project</button> <br><br>
+          <div class="modal4">
+            <div class="parent"><button class="btn modal-close4 top"><img src="./images/close.png" alt=""></button></div>
+            <!-- Page 1 Section -->
+            <section>
+              <br>
+
+              <br>
+
+              <h2>Page 1: Survey Ratings</h2>
+              <img src="./images/dining2.jpg" alt="Dining Satisfaction Analysis Details">
+              <p>Contains customer and dining information, as well as visual representation and scores (out of 5) of different survey metrics and their total average for the selected filters and ranges like:</p>
+              <ul>
+                <li>Baggage Handling</li>
+                <li>Check-in Service</li>
+                <li>Cleanliness</li>
+                <!-- Add all other bullet points as listed -->
+                <li>WiFi Service</li>
               </ul>
-              <h3 class="left-align">🔦 Insights</h3>
-              <ol>
-                <li>Which ProductsWhich Products Contributed More to Revenue?</li>
-                <li>Which States Should We Push More Products to?</li>
-                <li>What is The Peak Month in 2020 and 2021?</li>
-                <li> What is Our Top Region and Sales Channel?</li>
-                <li>Revenue Trend By Weekday.</li>
-                <li>Top Men Products VS Top Women Products.</li>
-              </ol>
-              <h3 class="left-align">⚖ KPIs</h3>
-              <ol>
-                <li>Total Revenue.</li>
-                <li>Ordered Quantity.</li>
-                <li>Number of Transactions.</li>
-                <li>Top 3 Men Products.</li>
-                <li>Top 3 Women Products.</li>
-              </ol>
-              <h3 class="left-align">🎚 Slicers</h3>
-              <ol>
-                <li>Year.</li>
-                <li>Month.</li>
-                <li>Product.</li>
-                <li>Sales Channel.</li>
-              </ol>
-              <video src="./images/adidas.mp4" type="video/mp4" controls width="1080"></video>
-            </p>
-            </div>
-            <script>
-              $(document).ready(function () {
-              $('.modal-open0').on('click', function () {
-              $('body').addClass('modal-open0');
-              $('.modal0').fadeIn();
+              <p>We see how changing customer information and the range of these scores affect the number of total satisfied and dissatisfied people...</p>
+            </section>
+            <!-- Page 2 Section -->
+            
+            <br>
+
+            <section>
+              <h2>Page 2: Statistical Analysis</h2>
+              <img src="./images/dining3.jpg" alt="Dining Satisfaction Analysis Insights">
+              <p>Includes some charts breaking down each survey metric and customer information by satisfaction level...</p>
+              <p>You can interact with the dashboard at: <a href="https://lookerstudio.google.com/reporting/5d9fd4fa-455c-4d3c-a817-c5b43826fe06" target="_blank">Looker Studio Dashboard</a></p>
+            </section>
+            
+            <br>
+
+            <!-- XGBoost Classifier Section -->
+            <section>
+              <h2>XGBoost Classifier</h2>
+              <img src="./images/xgboost.jpg" alt="XGBoost Classifier">
+              <p>We've retrained our model using XGBoost Boosted Trees. Accuracy jumped to 95.25%, and still under tuning and improvement.</p>
+            </section>
+            <p>For more information, check out the project on GitHub:</p>
+            <a href="https://github.com/Ibrahim-Izz/Dining-Satisfaction-Analysis" target="_blank">Dining Satisfaction Analysis on GitHub</a><br><br>
+          </div>
+          <script>
+            $(document).ready(function () {
+              $('.modal-open4').on('click', function () {
+                $('body').addClass('modal-open4');
+                $('.modal4').fadeIn();
               });
-              $('.modal-close0').on('click', function () {
-              $('body').removeClass('modal-open0');
-              $('.modal0').fadeOut();
+              $('.modal-close4').on('click', function () {
+                $('body').removeClass('modal-open4');
+                $('.modal4').fadeOut();
               });
-              });
+            });
           </script>
         </article>
 
         <!-- Posts -->
         <section class="posts">
+          <article>
+            <header class="major">
+              <h2>
+                ADIDAS Sales Analysis
+              </h2>
+              <img src="images/adidas.jpg" alt="Adidas Sales Analysis" class="modal-open0" style="cursor: pointer;"/>
+              <p>
+                Analyzing ADIDAS Sales Across USA Stores from January 2020 to December 2021
+              </p>
+            </header>
+            <button class = "btn modal-open0"> View Project </button> <br><br>
+              <div class = "modal0">
+                <div class="parent"><button class="btn modal-close0 top"><img src="./images/close.png" alt=""></button></div>
+                <img src="./images/adidas.jpg" alt="adidas sales Analysis">
+                <h2>Adidas Sales Analysis</h2>
+                <h4>
+                  Analyzing ADIDAS Sales Across USA Stores from January 2020 to December 2021
+                </h4>
+                <p>
+                <ul class="tick">
+                  <li>ETL Done with Power Query</li>
+                  <li>Analysis Done With Pivot Tables</li>
+                  <li>Dashboard Design Done with Excel Tools</li>
+                </ul>
+                <h3 class="left-align">🔦 Insights</h3>
+                <ol>
+                  <li>Which ProductsWhich Products Contributed More to Revenue?</li>
+                  <li>Which States Should We Push More Products to?</li>
+                  <li>What is The Peak Month in 2020 and 2021?</li>
+                  <li> What is Our Top Region and Sales Channel?</li>
+                  <li>Revenue Trend By Weekday.</li>
+                  <li>Top Men Products VS Top Women Products.</li>
+                </ol>
+                <h3 class="left-align">⚖ KPIs</h3>
+                <ol>
+                  <li>Total Revenue.</li>
+                  <li>Ordered Quantity.</li>
+                  <li>Number of Transactions.</li>
+                  <li>Top 3 Men Products.</li>
+                  <li>Top 3 Women Products.</li>
+                </ol>
+                <h3 class="left-align">🎚 Slicers</h3>
+                <ol>
+                  <li>Year.</li>
+                  <li>Month.</li>
+                  <li>Product.</li>
+                  <li>Sales Channel.</li>
+                </ol>
+                <video src="./images/adidas.mp4" type="video/mp4" controls width="1080"></video>
+              </p>
+              </div>
+              <script>
+                $(document).ready(function () {
+                $('.modal-open0').on('click', function () {
+                $('body').addClass('modal-open0');
+                $('.modal0').fadeIn();
+                });
+                $('.modal-close0').on('click', function () {
+                $('body').removeClass('modal-open0');
+                $('.modal0').fadeOut();
+                });
+                });
+            </script>
+          </article>
           <article>
             <header>
               <h2>
@@ -333,14 +390,14 @@
             <h3>Social</h3>
             <ul class="icons alt">
               <li>
-                <a href="https://www.facebook.com/ibrahem.izzaldeen" class="icon brands alt fa-facebook-f"
-                 target="_blank" ><span class="label">Facebook</span></a
-                >
+                <a href="https://www.facebook.com/ibrahem.izzaldeen" class="icon brands alt fa-facebook-f" target="_blank"><span class="label">Facebook</span></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/ibrahim-izz/" class="icon brands alt fa-linkedin"
-                 target="_blank" ><span class="label">LinkedIn</span></a
-                >
+                <a href="https://www.linkedin.com/in/ibrahim-izz/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a>
+              </li>
+              <!-- GitHub Icon -->
+              <li>
+                <a href="https://github.com/Ibrahim-Izz" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a>
               </li>
             </ul>
           </section>
