@@ -69,75 +69,173 @@
       <div id="main">
         <article class="post featured">
           <header>
-            <h2>Dining Satisfaction Analysis</h2>
-            <a href="javascript:void(0);" class="modal-open4">
-              <img src="images/dining1.jpg" alt="Dining Satisfaction Analysis" style="max-width:100%; height:auto; cursor:pointer;">
-            </a>
+              <h2>Dining Satisfaction Analysis
+                  <br>(Looker Studio & BigQuery ML)</h2>
+              <a href="javascript:void(0);" class="modal-open4">
+                  <img src="images/dining1.jpg" alt="Dining Satisfaction Analysis" style="max-width:100%; height:auto; cursor:pointer;">
+              </a>
           </header>
           <p>A descriptive and predictive analysis of dining satisfaction using Looker Studio and BigQuery ML. It evaluates various factors influencing dining satisfaction and predicts customer satisfaction based on their information and survey ratings.</p>
           <button class="btn modal-open4">View Project</button> <br><br>
           <div class="modal4">
-            <div class="parent"><button class="btn modal-close4 top"><img src="./images/close.png" alt=""></button></div>
-            <!-- Page 1 Section -->
-            <section>
+              <div class="parent"><button class="btn modal-close4 top"><img src="./images/close.png" alt=""></button></div>
+              
+              <h2>Dining Satisfaction Analysis</h2>
+              <div class="github-link" style="text-align: center; margin-bottom: 20px;">
+                  <a href="https://github.com/Ibrahim-Izz/Dining-Satisfaction-Analysis" target="_blank" style="font-size: 20px; text-decoration: none; color: #007bff; font-weight: bold;">Project on GitHub</a>
+              </div>
+              <!-- Page 1 Section -->
+              <section>
+                  <br>
+                  <br>
+                  <h2>Page 1: Survey Ratings</h2>
+                  <img src="./images/dining2.jpg" alt="Dining Satisfaction Analysis Details">
+                  <p>Contains customer and dining information, as well as visual representation and scores (out of 5) of different survey metrics and their total average for the selected filters and ranges like:</p>
+                  <ul>
+                      <li>Baggage Handling</li>
+                      <li>Check-in Service</li>
+                      <li>Cleanliness</li>
+                      <!-- Add all other bullet points as listed -->
+                      <li>WiFi Service</li>
+                  </ul>
+                  <p>We see how changing customer information and the range of these scores affect the number of total satisfied and dissatisfied people...</p>
+              </section>
+              <!-- Page 2 Section -->
               <br>
-
+              <section>
+                  <h2>Page 2: Statistical Analysis</h2>
+                  <img src="./images/dining3.jpg" alt="Dining Satisfaction Analysis Insights">
+                  <p>Includes some charts breaking down each survey metric and customer information by satisfaction level...</p>
+                  <p>You can interact with the dashboard at: <a href="https://lookerstudio.google.com/reporting/5d9fd4fa-455c-4d3c-a817-c5b43826fe06" target="_blank">Looker Studio Dashboard</a></p>
+              </section>
+              
               <br>
-
-              <h2>Page 1: Survey Ratings</h2>
-              <img src="./images/dining2.jpg" alt="Dining Satisfaction Analysis Details">
-              <p>Contains customer and dining information, as well as visual representation and scores (out of 5) of different survey metrics and their total average for the selected filters and ranges like:</p>
-              <ul>
-                <li>Baggage Handling</li>
-                <li>Check-in Service</li>
-                <li>Cleanliness</li>
-                <!-- Add all other bullet points as listed -->
-                <li>WiFi Service</li>
-              </ul>
-              <p>We see how changing customer information and the range of these scores affect the number of total satisfied and dissatisfied people...</p>
-            </section>
-            <!-- Page 2 Section -->
-            
-            <br>
-
-            <section>
-              <h2>Page 2: Statistical Analysis</h2>
-              <img src="./images/dining3.jpg" alt="Dining Satisfaction Analysis Insights">
-              <p>Includes some charts breaking down each survey metric and customer information by satisfaction level...</p>
-              <p>You can interact with the dashboard at: <a href="https://lookerstudio.google.com/reporting/5d9fd4fa-455c-4d3c-a817-c5b43826fe06" target="_blank">Looker Studio Dashboard</a></p>
-            </section>
-            
-            <br>
-
-            <!-- XGBoost Classifier Section -->
-            <section>
-              <h2>XGBoost Classifier</h2>
-              <img src="./images/xgboost.jpg" alt="XGBoost Classifier">
-              <p>We've retrained our model using XGBoost Boosted Trees. Accuracy jumped to 95.25%, and still under tuning and improvement.</p>
-            </section>
-            <p>For more information, check out the project on GitHub:</p>
-            <a href="https://github.com/Ibrahim-Izz/Dining-Satisfaction-Analysis" target="_blank">Dining Satisfaction Analysis on GitHub</a><br><br>
+              <!-- XGBoost Classifier Section -->
+              <section>
+                  <h2>XGBoost Classifier</h2>
+                  <img src="./images/xgboost.jpg" alt="XGBoost Classifier">
+                  <p>We've retrained our model using XGBoost Boosted Trees. Accuracy jumped to 95.25%, and still under tuning and improvement.</p>
+              </section>
+              <br><br>
           </div>
           <script>
-            $(document).ready(function () {
-              $('.modal-open4').on('click', function () {
-                $('body').addClass('modal-open4');
-                $('.modal4').fadeIn();
+              $(document).ready(function () {
+                  $('.modal-open4').on('click', function () {
+                      $('body').addClass('modal-open4');
+                      $('.modal4').fadeIn();
+                  });
+                  $('.modal-close4').on('click', function () {
+                      $('body').removeClass('modal-open4');
+                      $('.modal4').fadeOut();
+                  });
               });
-              $('.modal-close4').on('click', function () {
-                $('body').removeClass('modal-open4');
-                $('.modal4').fadeOut();
-              });
-            });
           </script>
-        </article>
+      </article>
 
         <!-- Posts -->
         <section class="posts">
           <article>
+            <header>
+                <h2>E-Commerce Analytics<br/>(SQL, Excel and Power BI)</h2>
+            </header>
+            <a href="javascript:void(0);" class="modal-open5">
+                <img src="images/ecommerce.jpg" alt="E-Commerce Data Analytics Project" style="max-width:100%; height:auto; cursor:pointer;">
+            </a>
+            <p>A comprehensive Data Analytics project tailored for E-Commerce, everything from ETL to Data Modeling and Warehousing up to Power BI Dashboard and even SQL Queries to answer all business needs.</p>
+            <button class="btn modal-open5">View Project</button> <br><br>
+            <div class="modal5">
+                <div class="parent"><button class="btn modal-close5 top"><img src="./images/close.png" alt=""></button></div>
+                <h2>E-Commerce Data Analytics Project</h2>
+                <div class="presentation-link" style="text-align: center; margin-bottom: 20px;">
+                    <a href="https://www.canva.com/design/DAF4b_QR4-0/cxoS4bgAY-N73LIUHhu6zw/edit?utm_content=DAF4b_QR4-0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" style="font-size: 20px; text-decoration: none; color: #007bff; font-weight: bold;">Link to Presentation</a>
+                </div>
+                <p>This project involves extracting data from CSV files, utilizing Excel (or Alteryx) for minimal transformations, transferring it to SQL Server for staging, and further refining it with Power Query transformations. Finally, we delve into SQL Server for data modeling and leverage Power BI for insightful analysis.</p>
+                <h3>Data Modeling in SQL Server:</h3>
+                <p>Delve into the intricacies of data modeling, where the structure of the data warehouse, including dimension and fact tables, is meticulously crafted for analytical purposes.</p>
+                <img src="images/model.jpg" alt="Data Modeling" style="max-width:100%; height:auto; display:block; margin:auto;">
+                <h3>Power Query Transformations:</h3>
+                <p>Witness the power of Power Query as it refines and transforms data within the SQL Server staging area, ensuring data quality and integrity before proceeding to the modeling phase.</p>
+                <h3>SQL Analysis for Strategic Insights:</h3>
+                <p>Experience the synergy of SQL Server and Power BI as we leverage queries to uncover valuable insights, enabling informed decision-making in the dynamic e-commerce landscape.</p>
+                <h3>Power BI Dashboard:</h3>
+                <p>Engaging and Dynamic Comprehensive Dashboard.</p>
+                <h3>Project Highlights:</h3>
+                <ul>
+                    <li>Efficient ETL Process: Alteryx facilitates a seamless transition from CSV to SQL Server, ensuring data integrity with minimal transformations.</li>
+                    <li>Robust Power Query Transformations: The Power Query component enhances data quality during the staging process, preparing it for comprehensive analysis.</li>
+                    <li>Scalable Data Modeling: The architecture is designed to handle growing datasets and evolving business requirements during the modeling phase.</li>
+                    <li>Actionable Intelligence: The analysis phase, powered by SQL Server and visualized through Power BI, provides strategic insights to drive informed business decisions.</li>
+                </ul>
+                <video src="./images/ecommerce.mp4" type="video/mp4" controls width="1080"></video>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $('.modal-open5').on('click', function () {
+                        $('body').addClass('modal-open5');
+                        $('.modal5').fadeIn();
+                    });
+                    $('.modal-close5').on('click', function () {
+                        $('body').removeClass('modal-open5');
+                        $('.modal5').fadeOut();
+                    });
+                });
+            </script>
+        </article>
+        <article>
+          <header>
+            <h2>
+                Toy Company<br/>
+                Sales Analysis (Power BI)
+            </h2>
+          </header>
+          <img src="images/Toys.png" alt="Toy company sales Analysis" class="modal-open1" style="cursor: pointer;"/>
+            <ol>
+              <li>2023 Sales Performance Report</li>
+              <li>Product Performance Report</li>
+              <li>Store Performance Report</li>
+            </ol>
+          
+          <button class = "btn modal-open1"> View Project </button> <br><br>
+          <div class = "modal1">
+            <div class="parent"><button class="btn modal-close1 top"><img src="./images/close.png" alt=""></button></div>
+            <img src="./images/Toys.png" alt="toy company sales Analysis">
+            <h2>Toy Company Sales Analysis</h2>
+            <p>
+            <ol>
+              <li>2023 Sales Performance Report</li>
+              <li>Product Performance Report</li>
+              <li>Store Performance Report</li>
+            </ol>
+            </p>
+            <h3 style="text-align: left;">Learned to Use Some Common DAX Functions to Measure:</h3>
+            <p>
+            <ol>
+              <li>Year-to-date revenue.</li>
+              <li>Year-over-year difference.</li>
+              <li>Progress towards given goal to reach by end of the year.</li>
+              <li>Total profits, units sold, cost and others all sliced by given products, stores, category, location or other filters.</li>
+              <li>Outstanding Visualizations.</li>
+            </ol>
+            <p>practiced using maps, conditional filtering, matrices, data modeling and other Power BI features, and still some work to do on this huge project.</p>
+            <video src="./images/Toys.mp4" type="video/mp4" controls width="1080"></video>
+          </div>
+          <script>
+            $(document).ready(function () {
+            $('.modal-open1').on('click', function () {
+            $('body').addClass('modal-open1');
+            $('.modal1').fadeIn();
+            });
+            $('.modal-close1').on('click', function () {
+            $('body').removeClass('modal-open1');
+            $('.modal1').fadeOut();
+            });
+            });
+        </script>
+        </article>  
+        <article>
             <header class="major">
               <h2>
-                ADIDAS Sales Analysis
+                ADIDAS Sales Analysis (Excel)
               </h2>
               <img src="images/adidas.jpg" alt="Adidas Sales Analysis" class="modal-open0" style="cursor: pointer;"/>
               <p>
@@ -198,62 +296,12 @@
                 });
             </script>
           </article>
+          
           <article>
             <header>
               <h2>
-                  Toy Company<br/>
-                  Sales Analysis
-              </h2>
-            </header>
-            <img src="images/Toys.png" alt="Toy company sales Analysis" class="modal-open1" style="cursor: pointer;"/>
-              <ol>
-                <li>2023 Sales Performance Report</li>
-                <li>Product Performance Report</li>
-                <li>Store Performance Report</li>
-              </ol>
-            
-            <button class = "btn modal-open1"> View Project </button> <br><br>
-            <div class = "modal1">
-              <div class="parent"><button class="btn modal-close1 top"><img src="./images/close.png" alt=""></button></div>
-              <img src="./images/Toys.png" alt="toy company sales Analysis">
-              <h2>Toy Company Sales Analysis</h2>
-              <p>
-              <ol>
-                <li>2023 Sales Performance Report</li>
-                <li>Product Performance Report</li>
-                <li>Store Performance Report</li>
-              </ol>
-              </p>
-              <h3 style="text-align: left;">Learned to Use Some Common DAX Functions to Measure:</h3>
-              <p>
-              <ol>
-                <li>Year-to-date revenue.</li>
-                <li>Year-over-year difference.</li>
-                <li>Progress towards given goal to reach by end of the year.</li>
-                <li>Total profits, units sold, cost and others all sliced by given products, stores, category, location or other filters.</li>
-                <li>Outstanding Visualizations.</li>
-              </ol>
-              <p>practiced using maps, conditional filtering, matrices, data modeling and other Power BI features, and still some work to do on this huge project.</p>
-              <video src="./images/Toys.mp4" type="video/mp4" controls width="1080"></video>
-            </div>
-            <script>
-              $(document).ready(function () {
-              $('.modal-open1').on('click', function () {
-              $('body').addClass('modal-open1');
-              $('.modal1').fadeIn();
-              });
-              $('.modal-close1').on('click', function () {
-              $('body').removeClass('modal-open1');
-              $('.modal1').fadeOut();
-              });
-              });
-          </script>
-          </article>
-          <article>
-            <header>
-              <h2>
-                otodom<br />
-                Analytics
+                Otodom<br />
+                Analytics (Snowflake SQL)
               </h2>
             </header>
             <img src="images/otodom.jpg" alt="" class="modal-open3" style="cursor: pointer;" />
@@ -298,7 +346,7 @@
             <header>
               <h2>
                   Time Series<br />
-                  Forecasting
+                  Forecasting (Power BI)
               </h2>
             </header>
             <img src="images/T-series.png" alt="" class="modal-open2" style="cursor: pointer;"/>
@@ -310,7 +358,7 @@
               <div class="parent"><button class="btn modal-close2 top"><img src="./images/close.png" alt=""></button></div>
 
               <img src="./images/T-series.png" alt="Time-series forecasting">
-              <h2>Time-series forecasting</h2>
+              <h2>Time-series forecasting (Power BI)</h2>
               <p>Practising Power BI Time Sereis Forecasting, Using DAX to write Linear Regression Formulas from scratch, and then simply using LINESTX( ) Function to do it all for me without manual calulations.</p>
               <p>I learnt some new concepts like Decomposition, which is the trend profiliing of time sereis data, Deseasonalization, which is to normalize seasonal compnents and match the overall data trend, and how using LINESTX( ) outperforms automatic forecasting feature in Power BI.</p>
               <video src="./images/T-series.mp4" type="video/mp4" controls width="1080"></video>
